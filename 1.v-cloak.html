@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css">
-    <title>Document</title>
+    <title>v-cloak</title>
 </head>
 
 <body>
     <div id="data" class="container">
-        <h1>{{msg}}</h1>
+        <h1>解決未加載完顯示VUE代碼問題</h1>
+        <h1 v-cloak>{{msg}}</h1>
     </div>
     <script type="text/javascript">
         Vue.component('', {
